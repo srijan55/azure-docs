@@ -28,7 +28,7 @@ When you create a new Stream Analytics job, it's a best practice to create it by
 
 ## Set the compatibility level
 
-You can set the compatibility level for a Stream Analytics job in the Azure portal or by using the [create job REST API call](/rest/api/streamanalytics/stream-analytics-job).
+You can set the compatibility level for a Stream Analytics job in the Azure portal or by using the [create job REST API call](/azure/stream-analytics/stream-analytics-quick-create-portal).
 
 To update the compatibility level of the job in the Azure portal:
 
@@ -138,11 +138,11 @@ The following major changes are introduced in compatibility level 1.1:
 
 **1.1 level:** CREATE TABLE allows you to specify a strong schema. The Stream Analytics engine validates that the data conforms to this schema. With this model, the command can filter events with NaN values.
 
-### Disable automatic upcast for datetime strings in JSON
+### Disable automatic conversion of datetime strings to DateTime type at ingress for JSON
 
-**1.0 level:** The JSON parser would automatically upcast string values with date/time/zone information to DateTime type and then convert it to UTC. This behavior resulted in losing the timezone information.
+**1.0 level:** The JSON parser would automatically convert string values with date/time/zone information to DATETIME type at ingress so the value immediately loses its original formatting and timezone information. Because this is done at ingress, even if that field was not used in the query, it is converted into UTC DateTime.
 
-**1.1 level:** There is no more automatically upcast of string values with date/time/zone information to DateTime type. As a result, timezone information is kept.
+**1.1 level:** There is no automatic conversion of string values with date/time/zone information to DATETIME type. As a result, timezone information and original formatting are kept. However, if the NVARCHAR(MAX) field is used in the query as part of a DATETIME expression (DATEADD function, for example), it's converted to DATETIME type to perform the computation and it loses its original form.
 
 ## Next steps
 

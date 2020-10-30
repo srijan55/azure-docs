@@ -6,7 +6,7 @@ author: mlee3gsd
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: overview
-ms.subservice: 
+ms.subservice: sql-dw 
 ms.date: 11/04/2019
 ms.author: martinle
 ms.reviewer: igorstan
@@ -14,11 +14,9 @@ ms.reviewer: igorstan
 
 # What is Azure Synapse Analytics (formerly SQL DW)?
 
-> [!NOTE] 
-> Try the latest Azure Synapse features such as workspaces, Spark, SQL on demand, and the integrated Synapse Studio experience 
-> by [requesting access to Azure Synapse (workspaces preview)](https://aka.ms/synapsepreview). 
->
+> [!NOTE]
 >Explore the [Azure Synapse (workspaces preview) documentation](../overview-what-is.md).
+>
 
 Azure Synapse is an analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless on-demand or provisioned resources—at scale. Azure Synapse brings these two worlds together with a unified experience to ingest, prepare, manage, and serve data for immediate BI and machine learning needs.
 
@@ -26,12 +24,10 @@ Azure Synapse has four components:
 
 - Synapse SQL: Complete T-SQL based analytics – Generally Available
   - SQL pool (pay per DWU provisioned)
-  - SQL on-demand (pay per TB processed) – (Preview)
-- Spark: Deeply integrated Apache Spark (Preview)
-- Synapse Pipelines: Hybrid data integration (Preview)
-- Studio: Unified user experience.  (Preview)
-
-
+  - SQL on-demand (pay per TB processed) (preview)
+- Spark: Deeply integrated Apache Spark (preview)
+- Synapse Pipelines: Hybrid data integration (preview)
+- Studio: Unified user experience. (preview)
 
 ## Synapse SQL pool in Azure Synapse
 
@@ -39,7 +35,7 @@ Synapse SQL pool refers to the enterprise data warehousing features that are gen
 
 SQL pool represents a collection of analytic resources that are being provisioned when using Synapse SQL. The size of SQL pool is determined by Data Warehousing Units (DWU).
 
-Import big data with simple [PolyBase](/sql/relational-databases/polybase/polybase-guide?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest) T-SQL queries, and then use the power of MPP to run high-performance analytics. As you integrate and analyze, Synapse SQL pool will become the single version of truth your business can count on for faster and more robust insights.  
+Import big data with simple [PolyBase](/sql/relational-databases/polybase/polybase-guide?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest) T-SQL queries, and then use the power of the distributed query engine to run high-performance analytics. As you integrate and analyze the data, Synapse SQL will become the single version of truth your business can count on for faster and more robust insights. 
 
 ## Key component of a big data solution
 
@@ -65,5 +61,5 @@ Or look at some of these other Azure Synapse resources.
 - Search [Blogs](https://azure.microsoft.com/blog/tag/azure-sql-data-warehouse/)
 - Submit a [Feature requests](https://feedback.azure.com/forums/307516-sql-data-warehouse)
 - [Create a support ticket](sql-data-warehouse-get-started-create-support-ticket.md)
-- Search [MSDN forum](https://social.msdn.microsoft.com/Forums/azure/home?forum=AzureSQLDataWarehouse)
+- Search [Microsoft Q&A question page](https://docs.microsoft.com/answers/topics/azure-synapse-analytics.html)
 - Search [Stack Overflow forum](https://stackoverflow.com/questions/tagged/azure-sqldw)

@@ -5,7 +5,7 @@ author: jseb225
 ms.author: jeanb
 ms.reviewer: mamccrea
 ms.service: stream-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/28/2017
 ---
 # Monitor and manage Stream Analytics jobs with Azure PowerShell cmdlets
@@ -14,7 +14,7 @@ Learn how to monitor and manage Stream Analytics resources with Azure PowerShell
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
 ## Prerequisites for running Azure PowerShell cmdlets for Stream Analytics
-* Create an Azure Resource Group in your subscription. The following is a sample Azure PowerShell script. For Azure PowerShell information, see [Install and configure Azure PowerShell](/powershell/azure/overview);  
+* Create an Azure Resource Group in your subscription. The following is a sample Azure PowerShell script. For Azure PowerShell information, see [Install and configure Azure PowerShell](/powershell/azure/);  
 
 Azure PowerShell 0.9.8:  
 
@@ -536,7 +536,7 @@ Test-AzStreamAnalyticsOutput -ResourceGroupName StreamAnalytics-Default-Central-
 This PowerShell command tests the connection status of the output Output in StreamingJob.  
 
 ## Get support
-For further assistance, try our [Azure Stream Analytics forum](https://social.msdn.microsoft.com/Forums/azure/home?forum=AzureStreamAnalytics). 
+For further assistance, try our [Microsoft Q&A question page for Azure Stream Analytics](https://docs.microsoft.com/answers/topics/azure-stream-analytics.html). 
 
 ## Next steps
 * [Introduction to Azure Stream Analytics](stream-analytics-introduction.md)
@@ -547,10 +547,10 @@ For further assistance, try our [Azure Stream Analytics forum](https://social.ms
 
 [msdn-switch-azuremode]: https://msdn.microsoft.com/library/dn722470.aspx
 [powershell-install]: https://azure.microsoft.com/documentation/articles/powershell-install-configure/
-[msdn-rest-api-create-stream-analytics-job]: https://msdn.microsoft.com/library/dn834994.aspx
-[msdn-rest-api-create-stream-analytics-input]: https://msdn.microsoft.com/library/dn835010.aspx
-[msdn-rest-api-create-stream-analytics-output]: https://msdn.microsoft.com/library/dn835015.aspx
-[msdn-rest-api-create-stream-analytics-transformation]: https://msdn.microsoft.com/library/dn835007.aspx
+[msdn-rest-api-create-stream-analytics-job]: https://docs.microsoft.com/azure/stream-analytics/stream-analytics-quick-create-portal
+[msdn-rest-api-create-stream-analytics-input]: https://docs.microsoft.com/azure/stream-analytics/stream-analytics-define-inputs
+[msdn-rest-api-create-stream-analytics-output]: https://docs.microsoft.com/azure/stream-analytics/stream-analytics-define-outputs
+[msdn-rest-api-create-stream-analytics-transformation]: https://docs.microsoft.com/cli/azure/ext/stream-analytics/stream-analytics/transformation
 
 [stream.analytics.introduction]: stream-analytics-introduction.md
 [stream.analytics.get.started]: stream-analytics-real-time-fraud-detection.md

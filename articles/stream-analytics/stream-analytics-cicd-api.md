@@ -5,7 +5,7 @@ author: mamccrea
 ms.author: mamccrea
 ms.reviewer: mamccrea
 ms.service: stream-analytics
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/04/2018
 ---
 
@@ -131,7 +131,7 @@ Example of request body in JSON:
 } 
 ```
  
-For more information, see the [API documentation](/rest/api/streamanalytics/stream-analytics-job).  
+For more information, see the [API documentation](/rest/api/streamanalytics/).  
  
 ## Publish Edge package 
  
